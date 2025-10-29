@@ -1,0 +1,8 @@
+services:
+  playwithdocker-site:
+    build: .
+    ports:
+      - "4000:80"
+    volumes:
+      - .:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
